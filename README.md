@@ -21,5 +21,3 @@ Nous encourageons les contributions ! Si vous souhaitez ajouter un projet à cet
 4. Push à la branche (`git push origin feature/nomDeVotreFeature`).
 5. Créez une nouvelle Pull Request.
 
-## Licence
-Le contenu de ce dépôt est sous licence MIT.
