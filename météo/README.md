@@ -37,8 +37,4 @@ Assurez-vous de ne pas exposer votre clé API dans des dépôts publics pour év
 
 Les contributions à ce projet sont les bienvenues. Si vous avez des suggestions d'amélioration ou des corrections, n'hésitez pas à créer une issue ou une pull request.
 
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
 
