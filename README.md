@@ -7,7 +7,7 @@ Bienvenue dans `js-projects-collection`, une compilation de projets JavaScript v
 
 Dans cette collection, vous trouverez des projets tels que :
 
-- **Application Météo** : Une application web qui affiche les conditions météorologiques actuelles d'une ville à l'aide de l'API d'OpenWeatherMap.
+- **Application Météo** : Une application web qui affiche les conditions météorologiques actuelles d'une ville à l'aide de l'API d'OpenWeatherMap. [voir ici](https://github.com/alaminedione/js-projects-collection/tree/main/m%C3%A9t%C3%A9o)
 - [D'autres projets seront ajoutés ici]
 
 
