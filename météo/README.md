@@ -37,4 +37,6 @@ Assurez-vous de ne pas exposer votre clé API dans des dépôts publics pour év
 
 Les contributions à ce projet sont les bienvenues. Si vous avez des suggestions d'amélioration ou des corrections, n'hésitez pas à créer une issue ou une pull request.
 
+## image
+![application météo](https://github.com/alaminedione/js-projects-collection/blob/main/m%C3%A9t%C3%A9o/m%C3%A9t%C3%A9o.png "application météo")
 
