@@ -1,0 +1,164 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .container{
+    /* background: #1231; */
+    background:  #4069e521  ;
+    height: 460px;
+    width: 920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    /* border: solid 1px; */
+    /* border-radius: 10px; */
+    box-shadow: 2px 2px 2px 2px saddlebrown;
+
+    /* !a supprimer */
+    /* background: aqua; */
+} 
+
+
+.section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    flex: 1;
+}
+
+.section h1{
+    font-family: Akaya Kanadaka; 
+    font-size: 32px; 
+    font-weight: 400; 
+    line-height: 48px; 
+    color: #EFB034FF; 
+}
+
+.section img{
+    width: 357px; 
+    height: 207px; 
+}
+
+
+.ajout-de-tache{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.ajout-de-tache input{
+  width: 257px; 
+  height: 36px; 
+  padding-left: 12px; 
+  padding-right: 34px; 
+  font-family: Inter; /* Body */
+  font-size: 14px; 
+  font-weight: 400; 
+  /* line-height: 22px;  */
+  background: #FFFFFFFF; /* white */
+  border-radius: 18px; 
+  border-width: 1px; 
+  border-color: #9095A0FF; /* neutral-500 */
+  outline: none; 
+
+}
+
+/* .ajout-de-tache input:focus{
+    border-color: gold;
+} */
+
+.ajout-de-tache button{
+        position:relative;
+        /* z-index: 2; */
+        left: -30px;
+        height: 37px; 
+        padding: 0 12px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        font-family: Inter; /* Body */
+        font-size: 14px; 
+        font-weight: 400; 
+        line-height: 22px; 
+        color: #FFFFFFFF; /* white */
+        background: #123; /* tertiary1-500 */
+        opacity: 1; 
+        border: none; 
+        border-radius: 19px; 
+
+        /* ?doit je ajouter */
+        transition: all 0.1s ease;
+}
+
+.ajout-de-tache button:hover{
+    box-shadow: 3px 3px 3px rgb(157, 160, 163);
+}
+
+.ajout-de-tache button:active{
+    transition: all 0.3 ease;
+    transform: scale(1.1);
+}
+
+
+.tache{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+
+.tache p{
+    width: 250px; 
+    height: 30px; 
+    padding-top: 5px;
+    padding-left: 12px; 
+    padding-right: 12px; 
+    font-family: Inter; /* Body */
+    font-size: 14px; 
+    font-weight: 400; 
+
+    /* line-height: 22px;  */
+    background: #FFFFFFFF; /*white*/
+    border: solid;
+    border-radius: 4px; /* border-m */
+    border-width: 2px; 
+    border-color: #9095A0FF; /* neutral-500 */
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /* ?should I add */
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: auto;
+    resize: both;
+}
+
+.tache img{
+  width: 24px; 
+  height: 24px; 
+}
+
+.tache input{
+   width: 15px;
+   height: 15px;
+   
+}
+
