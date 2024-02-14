@@ -1,6 +1,6 @@
 # 📝 Projet Todo-List en JavaScript
 
-Ce projet est une application web simple de todo-list construite avec HTML, CSS et JavaScript pur. Elle permet aux utilisateurs de créer une liste de tâches, de marquer les tâches comme terminées, et de supprimer les tâches. 🚀
+Ce projet est une application web simple de todo-list construite avec HTML, CSS et JavaScript vanilla. Elle permet aux utilisateurs de créer une liste de tâches, de marquer les tâches comme terminées, et de supprimer les tâches. 🚀
 
 ## Fonctionnalités ✨
 
