@@ -11,7 +11,7 @@ Ce projet est une application web simple de todo-list construite avec HTML, CSS 
 ## Comment ça marche ? 🛠
 
 1. **Ajouter une tâche :** Tapez votre tâche dans le champ de texte et appuyez sur `Entrée` ou cliquez sur le bouton d'ajout.
-2. **Marquer une tâche comme terminée :** Cliquez sur la checkbox pour la marquer comme terminée.
+2. **Marquer une tâche comme terminée :** Cliquez sur la *checkbox* pour la marquer comme terminée.
 3. **Supprimer une tâche :** Cliquez sur le bouton de suppression à côté de chaque tâche pour la retirer de la liste.
 
 
