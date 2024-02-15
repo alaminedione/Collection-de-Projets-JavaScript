@@ -57,6 +57,9 @@ btnAjouter.addEventListener('click',()=>{
         //réinitialisation de la tache
         text.value =""
 
+        //defilement vers la nouvelle tache
+        taches.scrollTop = taches.scrollHeight
+
       
 }
 })
