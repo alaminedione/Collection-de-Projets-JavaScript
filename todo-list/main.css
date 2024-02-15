@@ -120,6 +120,8 @@ body{
     justify-content: start;
     align-items: center;
     margin-bottom: 25px;
+    animation-name: slide;
+    animation-duration: 0.5s;
 }
 
 
@@ -165,4 +167,14 @@ body{
 .taches{
     max-height: 220px;
     overflow-y: auto ;
+}
+
+@keyframes slide{
+    from{
+        transform: translateY(-30px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+
 }
