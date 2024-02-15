@@ -1,15 +1,12 @@
 const btnAjouter = document.getElementById('btn-ajouter')
 let taches = document.getElementById('taches')
 let text = document.getElementById('tache-text')
-let nombres =0
+
 
 
 // quand la bouton ajouter est clique
 btnAjouter.addEventListener('click',()=>{
-    if(nombres > 3){
-        alert('vous avez atteint le maximum')
-        return
-    }
+   
     if(text.value === ""){
         alert('veuiller ecrire la tache a ajouter')
     }else {
@@ -60,8 +57,7 @@ btnAjouter.addEventListener('click',()=>{
         //réinitialisation de la tache
         text.value =""
 
-        //incrementer
-        nombres++
+      
 }
 })
 
