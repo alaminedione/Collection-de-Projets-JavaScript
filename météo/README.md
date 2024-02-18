@@ -21,7 +21,7 @@ Pour utiliser cette application, vous aurez besoin d'une clé API valide d'OpenW
 
 1. Clonez ce dépôt sur votre machine locale en utilisant :
    ```
-   git clone URL_DU_DEPOT
+   git clone https://github.com/alaminedione/js-projects-collection/tree/main/météo
    ```
 
 2. Naviguez dans le répertoire du projet.
