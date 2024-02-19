@@ -63,7 +63,7 @@ btnAjouter.addEventListener('click',()=>{
 
 //ajouter une tache si l'utilisateur tape sur la touche "entrer"
 document.querySelector(".ajout-de-tache").addEventListener('keydown',(e)=>{
-    if(e.keyCode==13){
+    if(e.key==13){
         ajouterLaTache()
     }
 })
