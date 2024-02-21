@@ -15,9 +15,11 @@ body{
 
 .dictionnaire{
     background-color: #e2e7e4;
+    max-height: 80vh;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 80%;
     gap: 50px;
     border: solid 1px;
     padding: 4%;
@@ -26,8 +28,7 @@ body{
 
 .barre-recherche{
     display: flex;
-    justify-content: space-evenly; /* ?*/
-    padding: 15px;
+    justify-content: space-evenly; 
 }
 .barre-recherche input{
     font-weight: bolder;
@@ -69,3 +70,35 @@ body{
     background-color: initial;
     margin-top: 7px;
 }
+
+.example{
+    border-left: 1px solid #000;
+    margin-left: 10px;
+    padding-left: 10px;
+    color: #053632;
+}
+
+.definition{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.definition h4{  /* h2 -> example */
+    color: rgb(214, 103, 103);
+    margin: 10px;
+    margin-bottom: 7px;
+    font-style: italic;
+}
+/* 
+.nom{
+    margin-bottom: 10px;
+}
+
+.verbe{
+    margin-bottom: 10px;
+}
+
+.adjectif{
+
+} */
