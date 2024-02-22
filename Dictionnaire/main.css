@@ -52,7 +52,13 @@ body{
     right: 20px;
 }
 
-
+.barre-recherche button:hover{
+    background-color: #0f66b3;
+}
+.barre-recherche button:active{
+    background-color: black;
+    color: #2196F3;
+}
 
 .entete{
     display: flex;
@@ -72,8 +78,8 @@ body{
 }
 
 .example{
-    border-left: 1px solid #000;
-    margin-left: 10px;
+    border-left: 2px solid #0ca170;
+    margin-left: 20px;
     padding-left: 10px;
     color: #053632;
 }
@@ -90,15 +96,3 @@ body{
     margin-bottom: 7px;
     font-style: italic;
 }
-/* 
-.nom{
-    margin-bottom: 10px;
-}
-
-.verbe{
-    margin-bottom: 10px;
-}
-
-.adjectif{
-
-} */
