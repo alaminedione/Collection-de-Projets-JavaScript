@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./dist/styles.css" rel="stylesheet">
+   <script src="https://cdn.tailwindcss.com"></script>
+  <title>Calculatrice</title>
+</head>
+
+<body class="bg-slate-950">
+  <header>
+    <h1 class="text-7xl font-bold tracking-widest text-center text-sky-400 mt-5  ">
+      Calculatrice
+    </h1>
+  </header>
+
+  <div class="max-w-lg mx-auto mt-20 ">
+    <div class="grid grid-cols-5 gap-2">
+      <!--screen -->
+      <div id="screen" class="col-span-5 border border-orange-400 border-2 rounded">
+        <div class="flex flex-col">
+          <div id="Visible" class="text-neutral-400 text-xl h-10 mx-5 overflow-auto">
+            <!-- no visibe-->
+            <div id="expression" class="hidden">
+            </div>
+            <!-- -->
+          </div>
+          <div id="resultat" class="text-end text-orange-600 mx-5 font-black text-3xl  h-10">
+            0
+          </div>
+        </div>
+      </div>
+
+      <!-- 1 er ligne-->
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('(')">
+        (
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement(')')">
+        )
+      </button>
+      <button class="bg-red-600 active:bg-red-500 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="effacerExpression()">
+        C
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('√')">
+        √ </button>
+      <button class="bg-orange-500 hover:bg-orange-600 text-neutral-900 font-black py-2 px-4 rounded"
+        onclick="afficheElement('/')">
+        /
+      </button>
+
+      <!-- 2 er ligne-->
+      <button class="bg-blue-500 hover:bg-blue-600 text-neutral-900  font-bold py-2 px-4 rounded"
+        onclick="afficheElement('Math.cos(')">
+        cos
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('1')">
+        1
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('2')">
+        2
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('3')">
+        3
+      </button>
+      <button class="bg-orange-500 hover:bg-orange-600 text-neutral-900 font-black py-2 px-4 rounded"
+        onclick="afficheElement('*')">
+        *
+      </button>
+
+      <!--3 eme ligne-->
+      <button class="bg-blue-500 hover:bg-blue-600 text-neutral-900  font-bold py-2 px-4 rounded"
+        onclick="afficheElement('Math.sin(')">
+        sin
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('4')">
+        4
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('5')">
+        5
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('6')">
+        6
+      </button>
+      <button class="bg-orange-500 hover:bg-orange-600 text-neutral-900 font-black py-2 px-4 rounded"
+        onclick="afficheElement('-')">
+        -
+      </button>
+
+      <!--4 eme ligne-->
+      <button class="bg-blue-500 hover:bg-blue-600 text-neutral-900  font-bold py-2 px-4 rounded "
+        onclick="afficheElement('Math.tan(')">
+        tan
+      </button>
+
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('7')">
+        7
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('8')">
+        8
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('9')">
+        9
+      </button>
+      <button class="bg-orange-500 hover:bg-orange-600 text-neutral-900 font-black py-2 px-4 rounded"
+        onclick="afficheElement('+')">
+        +
+      </button>
+
+      <!--5 eme ligne -->
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded "
+        onclick="afficheElement('Math.log(')">
+        log<sub>e</sub>
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded "
+        onclick="afficheElement('Math.exp(')">
+        e<sup>x</sup>
+      </button>
+
+
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded "
+        onclick="afficheElement('0')">
+        0
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="afficheElement('.')">
+        .
+      </button>
+      <button class="bg-orange-500 hover:bg-orange-600 text-neutral-900  font-black py-2 px-4 rounded "
+        onclick="calculer()">
+        =
+      </button>
+      <p class="col-span-5 text-orange-400 italic text-center">conversion</p>
+      <input type="text" id="nombre"
+        class="bg-slate-950 border border-orange-400 border-2 rounded text-slate-300 appearance-none pl-1"
+        placeholder="un nombre">
+      <div id="resultat-conversion"
+        class=" text-end text-orange-600  font-black text-xl h-10  border border-orange-400 border-2 rounded overflow-auto pr-1">
+        en
+      </div>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="decimalTObinaire()">
+        <strong>binaire</strong>
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="binaireTOdecimal()">
+        <strong>decimale</strong>
+      </button>
+      <button class="bg-blue-500 hover:bg-blue-700 text-neutral-900 font-bold py-2 px-4 rounded"
+        onclick="calculerFactoriel()">
+        !<sub>factoriel</sub>
+      </button>
+
+
+    </div>
+  </div>
+  <div class="bg-blue-500"></div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
