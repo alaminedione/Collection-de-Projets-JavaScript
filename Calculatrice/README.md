@@ -26,7 +26,7 @@ Notez que cette application utilise une méthode sécurisée pour l'évaluation 
 
 Les contributions à ce projet sont les bienvenues ! Si vous avez une suggestion pour améliorer cette application, n'hésitez pas à créer une issue ou à soumettre une pull request.
 ## Screenshoot
-[Calculatrice](Calculatrice/Calcultrice.png)
+![Calculatrice](Calculatrice/Calcultrice.png)
 ## Licence
 
 Ce projet est mis à disposition sous la Licence MIT. 
