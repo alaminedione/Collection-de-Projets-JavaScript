@@ -14,6 +14,9 @@ Ce projet est une application web simple de todo-list construite avec HTML, CSS 
 2. **Marquer une tâche comme terminée :** Cliquez sur la *checkbox* pour la marquer comme terminée.
 3. **Supprimer une tâche :** Cliquez sur le bouton de suppression à côté de chaque tâche pour la retirer de la liste.
 
+## Screenshoot
+![TodoList](https://github.com/alaminedione/Collection-de-Projets-JavaScript/blob/main/todo-list/TodoList.png)
+
 ## Licence 📄
 Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus d'informations.
 
