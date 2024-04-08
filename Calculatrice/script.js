@@ -49,71 +49,49 @@ function afficheElement(valeur) {
 
 
 
-
 function effacerExpression() {
-
   divVisible.textContent = "";
   expression.textContent = "";
   champResultat.textContent = "0";
   champResultatConversion.textContent = "0";
-
   document.getElementById('nombre').value = "0";
-
 }
 
 
 
+//calculer
 function calculer() {
-
-  let resultat = eval(expression.textContent);
-
-  if (isNaN(resultat)) {
-    champResultat.textContent = 'Erreur';
-  } else
-    champResultat.textContent = resultat;
-}
-
-
-
-function factoriel(n) {                 // !5= 5*4*3*2*1
-  let i, f = 1;
-  if (n == 0 || n == 1) {
-    return 1;
-  } else {
-    for (i = 1; i <= n; i++) {
-      f *= i;
-    }
-    return f;
+  let expr = expression.textContent;
+  try {
+    let resultat = Function('"use strict";return (' + expr + ")")();
+    champResultat.textContent = isNaN(resultat) ? "Erreur" : resultat;
+  } catch (e) {
+    champResultat.textContent = "Erreur";
   }
 }
 
-
+function factoriel(n) {
+  let result = 1;
+  for (let i = 2; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
 
 function calculerFactoriel() {
-
-  let nombre = document.getElementById('nombre').value;
+  let nombre = parseInt(document.getElementById("nombre").value, 10);
   let resultat = factoriel(nombre);
-
   champResultatConversion.textContent = resultat;
 }
 
-
-
 function binaireTOdecimal() {
-
-  let nombre = document.getElementById('nombre').value;
-  nombre = parseInt(nombre, 2);
-
-  champResultatConversion.innerHTML = nombre + '<sub>(10)</bin>';
+  let nombre = parseInt(document.getElementById("nombre").value, 2);
+  champResultatConversion.textContent = nombre + " (10)";
 }
-
-
 
 function decimalTObinaire() {
-
-  let nombre = document.getElementById('nombre').value;
-  nombre = parseInt(nombre);
-  nombre = nombre.toString(2);
-
-  champResultatConversion.innerHTML = nombre + '<sub>(2)</bin>';
+  let nombre = parseInt(document.getElementById("nombre").value, 10);
+  let resultat = nombre.toString(2);
+  champResultatConversion.textContent = resultat + " (2)";
 }
+
