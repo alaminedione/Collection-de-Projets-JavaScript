@@ -33,7 +33,7 @@ Ce projet est mis à disposition sous la Licence MIT.
 
 ## Auteurs
 
-- Alamine Dione (https://github.com/alaminedione/)
+- [Alamine Dione] (https://github.com/alaminedione/)
 
 Nous espérons que vous trouverez cette application calculatrice utile. Pour toute question ou suggestion, n'hésitez pas à nous contacter.
 
