@@ -7,7 +7,7 @@ Une compilation de projets JavaScript
 
 Dans cette collection, vous trouverez des projets tels que :
 
-- [**Météo**](https://github.com/alaminedione/Collection-de-Projets-JavaScript/tree/main/m%C3%A9t%C3%A9o) :  Afficher les conditions météorologiques actuelles d'une ville. 
-- [**TODO LIST**](https://github.com/alaminedione/Collection-de-Projets-JavaScript/tree/main/todo-list) : Une application web interactive permettant aux utilisateurs de gérer efficacement leurs tâches quotidiennes 🗓️.
+- [**Météo**](https://github.com/alaminedione/Collection-de-Projets-JavaScript/tree/main/m%C3%A9t%C3%A9o) 
+- [**TODO LIST**](https://github.com/alaminedione/Collection-de-Projets-JavaScript/tree/main/todo-list)
 - [**Dictionnaire**](https://github.com/alaminedione/Collection-de-Projets-JavaScript/tree/main/Dictionnaire)
 - [**Calculatrice**](https://github.com/alaminedione/Collection-de-Projets-JavaScript/tree/main/Calculatrice)
