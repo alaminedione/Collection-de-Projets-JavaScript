@@ -1,7 +1,7 @@
 
 # Collection de Projets JavaScript 
 
-Une compilation de projets JavaScript variés, allant des applications web simples aux complexe bibliothèques ou frameworks. Cette collection vise à présenter une diversité de cas d'utilisation de JavaScript, en mettant en lumière différentes techniques de développement, patterns de conception et meilleures pratiques.
+Une compilation de projets JavaScript
 
 ## Projets Inclus
 
